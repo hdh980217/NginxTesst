@@ -14,7 +14,7 @@ const App = () => {
     idRef.current.value = '';
     nameRef.current.value = '';
 
-    axios.post('/product1/member/create', {id : id, name : name})
+    axios.post('/api/product1/member/create', {id : id, name : name})
     .then((res) => {
       console.log(res);
     })
@@ -25,7 +25,7 @@ const App = () => {
 
   const memberAll = () => {
     console.log('자몽');
-    axios.get('/product2/member/all', {})
+    axios.get('/api/product2/member/all', {})
         .then((res) => {
             console.log(res.data);
             let result = [];
