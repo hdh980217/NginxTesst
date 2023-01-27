@@ -23,7 +23,7 @@ const App = () => {
     })
   }
 
-  const select = () => {
+  const memberAll = () => {
     console.log('자몽');
     axios.get('/product2/member/all', {})
         .then((res) => {
@@ -52,7 +52,7 @@ const App = () => {
       <input ref={nameRef} type='text' placeholder='name'/>
       <button onClick={insert}>insert</button><br/><br/>
 
-      <button onClick={select}>select</button><br/><br/>
+      <button onClick={memberAll}>select</button><br/><br/>
       <table border='1'>
         <thead>
           <tr>
