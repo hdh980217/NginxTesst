@@ -24,6 +24,7 @@ const App = () => {
   }
 
   const select = () => {
+    console.log('자몽');
     axios.get('/product2/member/all', {})
         .then((res) => {
             console.log(res.data);
